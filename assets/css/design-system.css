@@ -250,6 +250,16 @@
     appearance: none;
 }
 
+/* Fix: WP admin global a:link/a:visited rules have specificity (0,1,1) which
+   beats .wads-btn--* (0,1,0). These selectors reach (0,1,1)+(0,2,1) to win. */
+a.wads-btn:link,
+a.wads-btn:visited,
+a.wads-btn:hover,
+a.wads-btn:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .wads-btn:focus-visible {
     outline: none;
     box-shadow: 0 0 0 3px var(--wads-color-accent-ring);
@@ -263,29 +273,37 @@
 }
 
 /* Primary */
-.wads-btn--primary {
+.wads-btn--primary,
+a.wads-btn--primary:link,
+a.wads-btn--primary:visited {
     background:   var(--wads-color-accent);
     border-color: var(--wads-color-accent);
     color:        var(--wads-color-text-on-accent);
 }
-.wads-btn--primary:hover {
+.wads-btn--primary:hover,
+a.wads-btn--primary:hover {
     background:   var(--wads-color-accent-hover);
     border-color: var(--wads-color-accent-hover);
     color:        var(--wads-color-text-on-accent);
     text-decoration: none;
 }
-.wads-btn--primary:active {
+.wads-btn--primary:active,
+a.wads-btn--primary:active {
     background:   var(--wads-color-accent-active);
     border-color: var(--wads-color-accent-active);
+    color:        var(--wads-color-text-on-accent);
 }
 
 /* Secondary */
-.wads-btn--secondary {
+.wads-btn--secondary,
+a.wads-btn--secondary:link,
+a.wads-btn--secondary:visited {
     background:   var(--wads-color-surface);
     border-color: var(--wads-color-border-strong);
     color:        var(--wads-color-text);
 }
-.wads-btn--secondary:hover {
+.wads-btn--secondary:hover,
+a.wads-btn--secondary:hover {
     background:   var(--wads-color-surface-alt);
     border-color: var(--wads-color-border-strong);
     color:        var(--wads-color-text);
@@ -293,24 +311,30 @@
 }
 
 /* Ghost */
-.wads-btn--ghost {
+.wads-btn--ghost,
+a.wads-btn--ghost:link,
+a.wads-btn--ghost:visited {
     background:   transparent;
     border-color: transparent;
     color:        var(--wads-color-text-2);
 }
-.wads-btn--ghost:hover {
+.wads-btn--ghost:hover,
+a.wads-btn--ghost:hover {
     background:   var(--wads-color-surface-alt);
     color:        var(--wads-color-text);
     text-decoration: none;
 }
 
 /* Danger */
-.wads-btn--danger {
+.wads-btn--danger,
+a.wads-btn--danger:link,
+a.wads-btn--danger:visited {
     background:   var(--wads-color-danger);
     border-color: var(--wads-color-danger);
     color:        #fff;
 }
-.wads-btn--danger:hover {
+.wads-btn--danger:hover,
+a.wads-btn--danger:hover {
     background:   #6A2828;
     border-color: #6A2828;
     color:        #fff;
