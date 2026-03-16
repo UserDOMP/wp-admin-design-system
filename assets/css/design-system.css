@@ -1286,14 +1286,14 @@ a.wads-btn--danger:hover {
 .wads-semibold    { font-weight: var(--wads-weight-semibold); }
 .wads-medium      { font-weight: var(--wads-weight-medium); }
 
-.wads-mt-0  { margin-top: 0; }
-.wads-mt-2  { margin-top: var(--wads-sp-2); }
-.wads-mt-4  { margin-top: var(--wads-sp-4); }
-.wads-mt-6  { margin-top: var(--wads-sp-6); }
-.wads-mb-0  { margin-bottom: 0; }
-.wads-mb-2  { margin-bottom: var(--wads-sp-2); }
-.wads-mb-4  { margin-bottom: var(--wads-sp-4); }
-.wads-mb-6  { margin-bottom: var(--wads-sp-6); }
+.wads-mt-0  { margin-top: 0 !important; }
+.wads-mt-2  { margin-top: var(--wads-sp-2) !important; }
+.wads-mt-4  { margin-top: var(--wads-sp-4) !important; }
+.wads-mt-6  { margin-top: var(--wads-sp-6) !important; }
+.wads-mb-0  { margin-bottom: 0 !important; }
+.wads-mb-2  { margin-bottom: var(--wads-sp-2) !important; }
+.wads-mb-4  { margin-bottom: var(--wads-sp-4) !important; }
+.wads-mb-6  { margin-bottom: var(--wads-sp-6) !important; }
 
 .wads-hidden        { display: none !important; }
 .wads-sr-only       { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
