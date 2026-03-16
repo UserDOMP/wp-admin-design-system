@@ -1,13 +1,13 @@
 <?php
 
-namespace DarioMunoz\WpAdminDS;
+namespace UserDOMP\WpAdminDS;
 
 /**
  * WordPress Admin Design System
  *
  * Usage in your plugin:
  *
- *   use DarioMunoz\WpAdminDS\DesignSystem;
+ *   use UserDOMP\WpAdminDS\DesignSystem;
  *
  *   add_action('admin_enqueue_scripts', function() {
  *       DesignSystem::enqueue(

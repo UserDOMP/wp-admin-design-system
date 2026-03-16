@@ -1,6 +1,6 @@
 <?php
 
-namespace DarioMunoz\WpAdminDS;
+namespace UserDOMP\WpAdminDS;
 
 /**
  * Components — PHP helpers for the WP Admin Design System.

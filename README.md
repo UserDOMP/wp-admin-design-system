@@ -54,7 +54,7 @@ A design system for WordPress admin plugins — design tokens, typography, compo
 ## Installation
 
 ```bash
-composer require dariomunoz/wp-admin-design-system
+composer require userdomp/wp-admin-design-system
 ```
 
 Requires PHP 8.0+ and WordPress 6.0+.
@@ -68,7 +68,7 @@ Requires PHP 8.0+ and WordPress 6.0+.
 In your plugin's main PHP file (or wherever you register admin scripts):
 
 ```php
-use DarioMunoz\WpAdminDS\DesignSystem;
+use UserDOMP\WpAdminDS\DesignSystem;
 
 add_action('admin_enqueue_scripts', function() {
     DesignSystem::enqueue(
@@ -92,7 +92,7 @@ That's it. All design system styles are scoped to `.wads` so they never bleed in
 ### 3. Use the PHP helpers
 
 ```php
-use DarioMunoz\WpAdminDS\Components;
+use UserDOMP\WpAdminDS\Components;
 
 echo Components::notice('Settings saved.', 'success');
 
@@ -255,7 +255,7 @@ WordPress Admin Chrome (top bar + WP sidebar)
 Import the class at the top of any PHP file that renders admin HTML:
 
 ```php
-use DarioMunoz\WpAdminDS\Components;
+use UserDOMP\WpAdminDS\Components;
 ```
 
 All methods are `static` and return HTML strings. Use `echo` to render them.

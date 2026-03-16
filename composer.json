@@ -1,5 +1,5 @@
 {
-    "name": "dariomunoz/wp-admin-design-system",
+    "name": "userdomp/wp-admin-design-system",
     "description": "A design system for WordPress admin plugins — tokens, typography, and components.",
     "type": "library",
     "license": "GPL-2.0-or-later",
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DarioMunoz\\WpAdminDS\\": "src/"
+            "UserDOMP\\WpAdminDS\\": "src/"
         }
     },
     "extra": {
